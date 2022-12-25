@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>发布评论</title>
+    <link rel="stylesheet" href="../css/table.css">
+</head>
+<body>
+    <div class="back" id="back">
+        <div class="table" id="table">
+            <div class="tabletitle">填写内容</div>
+            <form action="blog.html" id="tablebody" class="tablebody" onsubmit="return login()"> 
+                服区：<input type="radio" name="gamesever" id="G"><label for="G"><img class="tp" src="../image/hypergryph.53400d.png" >官服</label>
+                <input type="radio" name="gamesever" id="B"><label for="B"><img class="tp" src="../image/bili.png" >b服</label>
+                <br>
+                结局：<select name="end" id="">
+                    <option value="text">一</option>
+                    <option value="text">二</option>
+                    <option value="text">三</option>
+                </select>
+                <br>
+                选择分队：<select name="fd" id="">
+                    <option value="text">心胜于物分队</option>
+                    <option value="text">物尽其用分队</option>
+                    <option value="text">以人为本分队</option>
+                    <option value="text">指挥分队</option>
+                    <option value="text">集群分队</option>
+                    <option value="text">后勤分队</option>
+                    <option value="text">矛头分队</option>
+                    <option value="text">突击战术分队</option>
+                    <option value="text">堡垒战术分队</option>
+                    <option value="text">远程战术分队</option>
+                    <option value="text">破坏战术分队</option>
+                    <option value="text">研究分队</option>
+                    <option value="text">高规格分队</option>
+                </select>
+                <br>
+                选择招募组合：<select name="zmzh" id="">
+                    <option value="text">先手必胜</option>
+                    <option value="text">稳扎稳打</option>
+                    <option value="text">取长补短</option>
+                    <option value="text">随心所欲</option>
+                </select>
+                <br>
+                核心干员职业：<br>
+                <input type="checkbox" name="Operators" value="先锋">先锋
+                <input type="checkbox" name="Operators" value="近卫">近卫
+                <input type="checkbox" name="Operators" value="重装">重装
+                <input type="checkbox" name="Operators" value="狙击">狙击
+                <br>
+                <input type="checkbox" name="Operators" value="术士">术士
+                <input type="checkbox" name="Operators" value="医疗">医疗
+                <input type="checkbox" name="Operators" value="辅助">辅助
+                <input type="checkbox" name="Operators" value="特种">特种
+                <br>
+                正文：
+                <br>
+                <textarea name="mainpart" id="mpt" cols="30" rows="20"></textarea>
+                <br>
+                <input type="submit" value="提交" id="sub" class="sub">
+            </form>     
+        </div>
+    </div>
+    <div class="con" id="con">
+        <div class="load">
+            <div class="dot" style="--i:0"></div>
+            <div class="dot" style="--i:1"></div>
+            <div class="dot" style="--i:2"></div>
+            <div class="dot" style="--i:3"></div>
+            <div class="dot" style="--i:4"></div>
+            <div class="dot" style="--i:5"></div>
+            <div class="dot" style="--i:6"></div>
+        </div>
+    </div>
+    <script src="../js/table.js"></script>
+</body>
+</html>
